@@ -1,0 +1,36 @@
+graygoo_supership = {
+	graphical_culture = no
+	entity = "gatebuilder_01_mothership_entity"
+	max_speed = 1200
+	acceleration = 2.0
+	rotation_speed = 1.5
+	collision_radius = 8
+	modifier = {
+		ship_evasion_add = 10
+		ships_upkeep_mult = -1
+	}
+	max_hitpoints = 3000000
+	size_multiplier = 80
+	map_counter_icon = ship_counter_64
+	icon = ship_size_military_16
+	fleet_slot_size = 16
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	class = shipclass_military
+
+	is_designable = no
+
+	required_component_set = "ftl_components"
+	required_component_set = "combat_computers"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+
+	components_add_to_cost = no
+	resources = {
+		category = ships
+			cost = {
+				nanites = 1000
+    		}
+	}
+}

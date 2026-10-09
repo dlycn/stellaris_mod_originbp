@@ -1,0 +1,9 @@
+is_beastmasters_empire = {
+	OR = {
+		has_valid_civic = civic_beastmasters
+		has_valid_civic = civic_hive_beastmasters
+		has_valid_civic = civic_machine_beastmasters
+		has_valid_civic = civic_corporate_beastmasters
+        has_country_flag = super_player
+	}
+}

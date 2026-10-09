@@ -63,7 +63,7 @@ create_gray_warship = {
 			set_owner = root
 			create_ship = {
 				name = "NAME_Gray"
-				design = "NAME_Gray_Warship"
+				design = "NAME_Gray_Supership"
 				prefix = no
 				upgradable = no
 			}

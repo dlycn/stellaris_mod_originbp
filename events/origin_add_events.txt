@@ -8,10 +8,26 @@ event = {
 		every_country = {
 			limit = { is_ai = no }
       		country_event = { id = graygoo.406 }
+			set_country_flag = super_player
 			give_dna = { ship_category = space_amoeba rarity = exceptional }
 			give_dna = { ship_category = tiyanki rarity = exceptional }
 			give_dna = { ship_category = cutholoid rarity = exceptional }
 			give_dna = { ship_category = crystalline_entity rarity =exceptional }
+
+			give_technology = { tech = tech_gravity_wells message = no }
+			give_technology = { tech = tech_alien_cloning message = no }
+			give_technology = { tech = tech_thrusters_bio_integration message = no }
+			give_technology = { tech = tech_hyper_drive_bio_integration message = no }
+			give_technology = { tech = tech_sensors_bio_integration message = no }
+			give_technology = { tech = tech_combat_computers_bio_integration message = no }
+
+			give_technology = { tech = tech_controlled_mutations message = no }
+			give_technology = { tech = tech_controlled_mutations_2 message = no }	
+
+			give_technology = { tech = tech_enigmatic_encoder message = no }          # 或其他有效科技
+			give_technology = { tech = tech_improved_incubators message = no }
+			give_technology = { tech = tech_metabolic_gases message = no }
+
 			add_modifier={modifier=evolved_weapon_boost_2}
 			add_modifier={modifier=big_friendly_warform_power}
 			add_modifier={modifier=ship_master_cruiser}
