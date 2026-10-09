@@ -81,25 +81,25 @@ create_gray_warship = {
 create_gray_army = {
 	capital_scope = { save_event_target_as = gray_transport_location }
     create_fleet = {
-		name = "NAME_Gray"
+		name = "NAME_Gray_Supership"
 		effect = {
 			set_owner = root
 			while = {
-				count = 100
+				count = 50
 				create_army_transport = {
 					ship_name = "NAME_Gray"
-					army_name = "NAME_Gray"
+					army_name = "NAME_Gray_Superfleet"
 					army_type = "gray_army"
 				}
 				create_army_transport = {
-					ship_name = "NAME_care_defensive_protocols"
-					army_name = "NAME_care_defensive_protocols"
-					army_type = "care_defensive_protocols"
+					ship_name = "NAME_Gray"
+					army_name = "NAME_Gray_Superfleet"
+					army_type = "gray_follower_army"
 				}
 				create_army_transport = {
-					ship_name = "NAME_care_defensive_protocols"
-					army_name = "NAME_care_defensive_protocols"
-					army_type = "care_defensive_protocols"
+					ship_name = "NAME_Gray"
+					army_name = "NAME_Gray_Superfleet"
+					army_type = "gray_follower_army"
 				}
 			}
 			set_location = {

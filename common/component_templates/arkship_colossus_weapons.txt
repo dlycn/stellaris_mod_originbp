@@ -1,0 +1,56 @@
+# 科研方舟 → 地爆天星
+weapon_component_template = {
+    key = "ARKSHIP_PLANET_KILLER_CRACKER"
+    size = planet_killer
+    type = planet_killer
+    use_ship_main_target = no
+    icon = GFX_ship_part_world_cracker
+    icon_frame = 1
+    potential = {
+        OR = {
+            is_ship_size = science_arkship_tier_1
+            is_ship_size = science_arkship_tier_2
+            is_ship_size = science_arkship_tier_3
+        }
+    }
+    component_set = "ARKSHIP_PLANET_KILLER"
+    planet_destruction_gfx = "shatter_planet_gfx"
+}
+
+# 民用方舟 → 降智光束
+weapon_component_template = {
+    key = "ARKSHIP_PLANET_KILLER_SHIELDER"
+    size = planet_killer
+    type = planet_killer
+    use_ship_main_target = no
+    icon = GFX_ship_part_global_pacifier
+    icon_frame = 1
+    potential = {
+        OR = {
+            is_ship_size = civilian_arkship_tier_1
+            is_ship_size = civilian_arkship_tier_2
+            is_ship_size = civilian_arkship_tier_3
+        }
+    }
+    component_set = "ARKSHIP_PLANET_KILLER"
+    planet_destruction_gfx = "global_pacifier_gfx"
+}
+
+# 军事方舟 → 中子灭杀
+weapon_component_template = {
+    key = "ARKSHIP_PLANET_KILLER_NEUTRON"
+    size = planet_killer
+    type = planet_killer
+    use_ship_main_target = no
+    icon = GFX_ship_part_neutron_sweep
+    icon_frame = 1
+    potential = {
+        OR = {
+            is_ship_size = military_arkship_tier_1
+            is_ship_size = military_arkship_tier_2
+            is_ship_size = military_arkship_tier_3
+        }
+    }
+    component_set = "ARKSHIP_PLANET_KILLER"
+    planet_destruction_gfx = "neutron_planet_gfx"
+}

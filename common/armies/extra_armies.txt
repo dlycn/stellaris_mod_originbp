@@ -1,0 +1,22 @@
+# Gray Nanite Army
+gray_follower_army = {
+	damage = 48.0
+	health = 72.0
+	has_morale = no
+	morale_damage = 12.0
+	collateral_damage = 15.0
+	war_exhaustion = 24.0
+	time = 5
+	resources = {
+		category = armies
+		produces = {
+			energy = 1
+		}
+	}
+	has_species = no
+	icon = GFX_army_type_machine_assault
+
+	potential_country = {
+		always = no
+	}
+}

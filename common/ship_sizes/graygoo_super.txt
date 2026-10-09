@@ -6,10 +6,25 @@ graygoo_supership = {
 	rotation_speed = 1.5
 	collision_radius = 8
 	modifier = {
-		ship_evasion_add = 10
+		ship_evasion_add = 20
+		ship_accuracy_add = 20
+		ship_winddown_mult = -0.75
+		ship_windup_mult = -0.75
+		ship_tracking_add = 10
 		ships_upkeep_mult = -1
+		ship_reactor_power_mult = 2.5
+		ship_cloaking_strength_add = 5
+		ship_cloaking_detection_add = 5
+		ship_target_weight_mult = 8
+		ship_shield_mult = 0.8
+		ship_weapon_damage = 2.4
+		ship_fire_rate_mult = 4.8
+		ship_hull_mult = 1.8
+		ship_speed_mult = 1.5
+		ship_hull_regen_add_static = 0.8
+		ship_armor_regen_add_static = 1.2
 	}
-	max_hitpoints = 3000000
+	max_hitpoints = 300000
 	size_multiplier = 80
 	map_counter_icon = ship_counter_64
 	icon = ship_size_military_16
@@ -21,10 +36,13 @@ graygoo_supership = {
 
 	is_designable = no
 
+
+	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "combat_computers"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "ship_aura_components"
 
 	components_add_to_cost = no
 	resources = {

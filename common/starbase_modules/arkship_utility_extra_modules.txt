@@ -1,0 +1,35 @@
+arkship_colossus_mount = {
+    icon = "GFX_ship_part_world_cracker"
+    section = "ARKSHIP_LIVING_SPACE_MODULE"
+    construction_days = @arkship_spinal_mount_build_time
+    starbase_type = arkship
+    category = sm_utility_cat
+
+    potential = {
+        owner? = {
+            has_country_flag = super_player
+        }
+        is_arkship_starbase = yes
+    }
+
+    cannot_fit_on_slots = { spinal_mount_1 }
+
+    resources = {
+        category = starbase_arkship_upgrades
+        cost = {
+            alloys = @arkship_cost_alloys_5000
+            influence = @arkship_cost_influence_250
+        }
+        upkeep = {
+            energy = @arkship_upkeep_energy_3
+        }
+    }
+
+    component_set = ARKSHIP_PLANET_KILLER
+    show_component_tooltips = yes
+    custom_tooltip = sm_arkship_colossus_mount_tt
+
+    ai_weight = {
+        weight = 0
+    }
+}

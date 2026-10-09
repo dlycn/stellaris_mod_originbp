@@ -3,3 +3,20 @@
  #Grand Archive #
  #################
  NAME_Gray_Supership: "Gray Supership"
+ NAME_Gray_Superfleet: "$NAME_Gray_Supership$"
+ graygoo_supership: "gray supership"
+ graygoo_supership_plural: "gray supership"
+ graygoo_supership_cap: "supership"
+ gray_follower_army: "gray flower army"
+ gray_follower_army_desc: "an ancient and adaptive army of nanobots, the slave of honey gray"
+
+ ARKSHIP_PLANET_KILLER_CRACKER_ACTION: "Shatter Planet"
+ ARKSHIP_PLANET_KILLER_SHIELDER_ACTION: "Pacify Planet"
+ ARKSHIP_PLANET_KILLER_NEUTRON_ACTION: "Sweep Planet"
+ FLEETORDER_DESTROY_PLANET_WITH_ARKSHIP_PLANET_KILLER_CRACKER: "Preparing to Shatter Planet"
+ FLEETORDER_DESTROY_PLANET_WITH_ARKSHIP_PLANET_KILLER_SHIELDER: "Preparing to Pacify Planet"
+ FLEETORDER_DESTROY_PLANET_WITH_ARKSHIP_PLANET_KILLER_NEUTRON: "Preparing to Sweep Planet"
+ sm_arkship_colossus_mount: "§RArkship Planet Killer Mount§!"
+ sm_arkship_colossus_mount_desc: "Adds a planet killer weapon to the Arkship. §ROnly for super players§!."
+ sm_arkship_colossus_mount_tt: "Unlocks a Planet Killer Weapon"
+ sm_arkship_super_weapon_tt: "Unlocks a full array of self-upgrading shipboard weapons"
