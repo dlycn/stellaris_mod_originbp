@@ -1,0 +1,90 @@
+namespace = overpower
+event = {
+	id = overpower.0	
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { is_ai = no }
+      		country_event = { id = graygoo.406 }
+			give_dna = { ship_category = space_amoeba rarity = exceptional }
+			give_dna = { ship_category = tiyanki rarity = exceptional }
+			give_dna = { ship_category = cutholoid rarity = exceptional }
+			give_dna = { ship_category = crystalline_entity rarity =exceptional }
+			add_modifier={modifier=evolved_weapon_boost_2}
+			add_modifier={modifier=big_friendly_warform_power}
+			add_modifier={modifier=ship_master_cruiser}
+			add_modifier={modifier=fe_ship_cost_modifier}
+			add_modifier={modifier=artifact_find_military_application_army}
+			add_modifier={modifier=modern_trench_war}
+			add_modifier={modifier=ancient_warden_boost}
+			add_modifier={modifier=vyctor_improved_fleet_logistics}
+			add_modifier={modifier=fear_as_control_militarist}
+			add_modifier={modifier=queen_combat_modifier}
+			add_modifier={modifier=technosphere_power}
+			add_modifier={modifier=dreadnought_power}
+			add_modifier={modifier=enigmatic_power}
+			add_modifier={modifier=vluur_power}
+			add_modifier={modifier=ahab_power}
+			add_modifier={modifier=land_appropriation}
+			add_modifier={modifier=dportal_trade_crisis}
+			add_modifier={modifier=good_vibrations}
+			add_modifier={modifier=too_lucid_02} 
+			add_modifier={modifier=wraith_trophy}
+			add_modifier={modifier=subterranean_wildlife}
+			add_modifier={modifier=enigmatic_cache_in_orbit}
+			add_modifier={modifier=obsidian_lakes}
+			add_modifier={modifier=shard_trophy}
+			add_modifier={modifier=paradise_planet} 
+			add_modifier={modifier=colonial_remains}
+			add_modifier={modifier=subterranean_expansion}
+			add_modifier={modifier=the_memorex}
+			add_modifier={modifier=gas_rich_planet_fo_realz}
+			add_modifier={modifier=ultra_rich}
+			add_modifier={modifier=lush_planet}
+			add_modifier={modifier=paradise_planet}
+			add_modifier={modifier=soothing_crystals}
+			add_modifier={modifier=rummy_nebula}
+			add_modifier={modifier=conviction}
+			add_modifier={modifier=doomsday_first_colony}
+			add_modifier={modifier=ageless}
+			add_modifier={modifier=artifact_find_peaceful_application_leader_improvement}
+			add_modifier={modifier=energy_utopia_57}
+			add_modifier={modifier=fallen_empire_gift_databanks}
+			add_modifier={modifier=ai_strength}
+			add_modifier={modifier=uprising_ai_buff}
+			add_modifier={modifier=native_indoctrination}
+			add_modifier={modifier=super_sensor_array}
+			add_modifier={modifier=contingency_calculation}
+
+			create_fleet = {
+				effect = {
+					set_owner = prev
+					while = {
+						count = 40
+						create_ship = {
+							name = random
+							random_existing_design = space_amoeba
+							rarity = exceptional
+							age = 0
+						}
+					}
+					set_location = prev.capital_star
+					owner = {
+						create_leader = {
+							class = commander
+							name = random
+							species = owner_main_species
+							skill = 10
+						}
+					}
+					set_leader = last_created_leader
+					save_event_target_as = beastmasters_starting_fleet
+				}
+			}
+
+
+		}
+	}	
+}

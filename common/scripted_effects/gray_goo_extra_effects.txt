@@ -1,0 +1,112 @@
+
+create_gray_official = {
+	if = {
+		limit = { has_country_flag = gray_official_active }
+		remove_country_flag = gray_official_active
+		event_target:gray_official = {
+			kill_leader = { show_notification = no }
+		}
+	}
+	set_country_flag = gray_official_active
+
+	create_species = {
+		name = "NAME_Gray_Goo"
+		class = PARAGON
+		portrait = graygoo_empress
+		namelist = "AI"
+		traits = random
+	}
+
+	create_leader = {
+		class = official
+		tier = leader_tier_legendary
+		species = last_created_species
+		name = NAME_Gray
+		event_leader = yes
+		skill = 10
+		set_age = 0
+		skip_background_generation = yes
+		custom_catch_phrase = gray_catch_phrase
+		custom_description = gray_backstory
+		background_ethic = ethic_gestalt_consciousness
+		gender = indeterminable
+		hide_age = yes
+		traits = {
+			1 = leader_trait_governor_gray
+			2 = subclass_official_governor
+			3 = trait_ruler_architectural_sense_3
+			4 = leader_trait_distribution_lines_2
+		}
+		effect = {
+			set_leader_flag = immune_to_negative_traits
+			set_leader_flag = gray_leader
+		}
+	}
+	last_created_leader = {
+		save_global_event_target_as = gray_official
+		set_leader_flag = has_gained_level_trait
+	}
+}
+
+create_gray_warship = {
+	capital_scope = { save_event_target_as = gray_warship_location }
+	create_fleet = {
+		name = "NAME_Gray"
+		settings = {
+			can_upgrade = no
+			can_change_composition = no
+			can_change_leader = no
+			uses_naval_capacity = no
+			spawn_debris = no
+		}
+		effect = {
+			set_owner = root
+			create_ship = {
+				name = "NAME_Gray"
+				design = "NAME_Gray_Warship"
+				prefix = no
+				upgradable = no
+			}
+			save_global_event_target_as = gray_warship
+			set_location = event_target:gray_warship_location
+			add_modifier = {
+				modifier = "gray_warship"
+				days = -1
+			}
+		}
+	}
+}
+
+
+create_gray_army = {
+	capital_scope = { save_event_target_as = gray_transport_location }
+    create_fleet = {
+		name = "NAME_Gray"
+		effect = {
+			set_owner = root
+			while = {
+				count = 100
+				create_army_transport = {
+					ship_name = "NAME_Gray"
+					army_name = "NAME_Gray"
+					army_type = "gray_army"
+				}
+				create_army_transport = {
+					ship_name = "NAME_care_defensive_protocols"
+					army_name = "NAME_care_defensive_protocols"
+					army_type = "care_defensive_protocols"
+				}
+				create_army_transport = {
+					ship_name = "NAME_care_defensive_protocols"
+					army_name = "NAME_care_defensive_protocols"
+					army_type = "care_defensive_protocols"
+				}
+			}
+			set_location = {
+				target = event_target:gray_transport_location
+				distance = 0
+				angle = random
+			}
+		}
+    }
+}

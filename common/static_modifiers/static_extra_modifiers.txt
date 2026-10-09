@@ -1,0 +1,13 @@
+# Only applied to human-controlled empires
+player_empire = {
+  country_government_civic_points_add = 2
+  ship_base_speed_mult = 1.5
+  ship_speed_mult = 1.5
+	starbases_upkeep_mult = -0.5
+	ships_upkeep_mult = -0.5
+	country_naval_cap_add = 1000
+	country_resource_max_add = 1000000
+	country_occupation_armies_add = 3
+	add_base_country_intel = 20 
+	bonus_automated_workforce_mult = 1.00
+}

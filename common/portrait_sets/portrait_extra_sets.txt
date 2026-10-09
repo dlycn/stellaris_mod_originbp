@@ -1,0 +1,7 @@
+paragons = {
+	species_class = PARAGON
+
+	portraits = {
+		"graygoo_empress"
+	}
+}
