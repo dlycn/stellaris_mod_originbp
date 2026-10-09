@@ -1,6 +1,6 @@
 arkship_colossus_mount = {
-    icon = "GFX_ship_part_world_cracker"
-    section = "ARKSHIP_LIVING_SPACE_MODULE"
+    icon = "GFX_ship_part_energy_lens_beam"
+    section = "ARKSHIP_XL_LENS_MODULE"
     construction_days = @arkship_spinal_mount_build_time
     starbase_type = arkship
     category = sm_utility_cat
@@ -25,7 +25,7 @@ arkship_colossus_mount = {
         }
     }
 
-    component_set = ARKSHIP_PLANET_KILLER
+    component_set = LENS_FLARE_BEAM
     show_component_tooltips = yes
     custom_tooltip = sm_arkship_colossus_mount_tt
 
