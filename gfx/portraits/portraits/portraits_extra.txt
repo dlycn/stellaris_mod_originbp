@@ -1,0 +1,6 @@
+portraits = {
+    graygoo_empress = {
+        texturefile = "gfx/models/portraits/gray.dds"
+        greeting_sound = "avian_01_greetings"
+    }
+}
