@@ -10,7 +10,9 @@
  gray_follower_army: "纳米虫群"
  gray_follower_army_desc: "古老且适应力惊人的纳米虫群，小灰的眷属"
 
- sm_arkship_colossus_mount: "§R透镜麻痹者阵列§!"
- sm_arkship_colossus_mount_desc: "为方舟舰添加6座透镜麻痹者。§R仅超级玩家§!可用。"
+ sm_arkship_colossus_mount: "透镜麻痹者阵列"
+ sm_arkship_colossus_mount_desc: "为方舟舰添加6座透镜麻痹者。仅§R玩家§!可用。"
  sm_arkship_colossus_mount_tt: "解锁透镜麻痹者阵列"
+ sm_arkship_super_weapon_array: "方舟超级武器阵列"
+ sm_arkship_super_weapon_array_desc: "安装全套自动升级舰载武器：2×L导弹、2×鱼雷、4×舰载机、3×M能量武器、2×L能量武器、1×XL光矛、3×点防御。仅超级玩家可用。"
  sm_arkship_super_weapon_tt: "解锁自动升级的全套舰载武器阵列"
