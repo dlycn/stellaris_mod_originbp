@@ -7,6 +7,17 @@ player_empire = {
 	ships_upkeep_mult = -0.5
 	country_naval_cap_add = 1000
 	country_resource_max_add = 1000000
+	country_resource_max_minor_artifacts_add = 1000000
+	country_resource_max_astral_threads_add = 100000
+	country_resource_max_consumer_goods_add = 100000
+
+	country_society_tech_research_speed = 9.6
+	country_physics_tech_research_speed = 9.6
+	country_engineering_tech_research_speed = 9.6
+
+	BIOLOGICAL_species_trait_points_add = 24
+	BIOLOGICAL_species_trait_picks_add = 5
+
 	country_occupation_armies_add = 3
 	add_base_country_intel = 20 
 	bonus_automated_workforce_mult = 1.00
@@ -14,7 +25,7 @@ player_empire = {
 	ship_windup_mult = -0.75          
 	ship_winddown_mult = -0.75        
 	ship_jumpdrive_cooldown_mult = -0.75  
-	ship_fire_rate_mult = 5
+	ship_fire_rate_mult = 1.5
 
 	
 	ship_interstellar_speed_mult = 1.00    
@@ -31,3 +42,4 @@ player_empire = {
 	starbase_upgrade_speed_mult = 6.5           
   
 }
+

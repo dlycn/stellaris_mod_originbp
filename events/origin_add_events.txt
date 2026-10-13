@@ -28,8 +28,8 @@ event = {
 			give_technology = { tech = tech_improved_incubators message = no }
 			give_technology = { tech = tech_metabolic_gases message = no }
 
-			add_modifier={modifier=evolved_weapon_boost_2}
-			add_modifier={modifier=big_friendly_warform_power}
+			add_resource = { alloys = 100000 }
+
 			add_modifier={modifier=ship_master_cruiser}
 			add_modifier={modifier=fe_ship_cost_modifier}
 			add_modifier={modifier=artifact_find_military_application_army}
@@ -40,7 +40,6 @@ event = {
 			add_modifier={modifier=queen_combat_modifier}
 			add_modifier={modifier=technosphere_power}
 			add_modifier={modifier=dreadnought_power}
-			add_modifier={modifier=enigmatic_power}
 			add_modifier={modifier=vluur_power}
 			add_modifier={modifier=ahab_power}
 			add_modifier={modifier=land_appropriation}
@@ -73,6 +72,25 @@ event = {
 			add_modifier={modifier=native_indoctrination}
 			add_modifier={modifier=super_sensor_array}
 			add_modifier={modifier=contingency_calculation}
+			add_modifier={modifier=magnetic_research_boost}
+			add_modifier={modifier=enigmatic_cache_in_orbit}
+			add_modifier={modifier=relic_zro_crystal_state}
+			add_modifier={modifier=conviction}
+			add_modifier={modifier=joint_cloud_boon}
+			add_modifier={modifier=galatron_energy}
+			add_modifier={modifier=galatron_minerals}
+			add_modifier={modifier=galatron_food}
+			add_modifier={modifier=galatron_unity}
+			add_modifier={modifier=curator_insight}
+
+			ruler = {
+				add_trait = leader_trait_educator
+				add_trait = leader_trait_master_bureaucrat
+				add_trait = leader_trait_erudite
+				set_leader_flag = immune_to_negative_traits
+				set_leader_flag = has_gained_level_trait
+				set_leader_flag = leader_death_events_blocked
+			}
 
 			create_fleet = {
 				effect = {
@@ -104,3 +122,5 @@ event = {
 		}
 	}	
 }
+
+

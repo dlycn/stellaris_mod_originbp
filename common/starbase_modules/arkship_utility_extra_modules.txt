@@ -1,9 +1,14 @@
 arkship_colossus_mount = {
     icon = "GFX_ship_part_energy_lens_beam"
     section = "ARKSHIP_XL_LENS_MODULE"
-    construction_days = @arkship_spinal_mount_build_time
+    construction_days = 720
     starbase_type = arkship
     category = sm_utility_cat
+
+	starbase_limit = {
+		base = 2
+	}
+
 
     potential = {
         owner? = {

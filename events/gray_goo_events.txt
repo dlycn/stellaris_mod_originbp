@@ -2407,8 +2407,13 @@ country_event = {
 				traits = {
 					1 = leader_trait_governor_gray
 					2 = subclass_official_governor
-					3 = trait_ruler_architectural_sense_3
-					4 = leader_trait_distribution_lines_2
+					3 = leader_trait_urbanist
+					4 = leader_trait_efficient
+					5 = leader_trait_utopian_idealist
+					6 = leader_trait_galvanizer
+					7 = leader_trait_intemporal
+					8 = leader_trait_mediator
+					9 = leader_trait_supreme_organizer
 				}
 
 			}

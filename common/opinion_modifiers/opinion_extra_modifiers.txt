@@ -1,0 +1,35 @@
+opinion_arkship_harvested_resources = {
+	opinion = {
+		base = @arkship_harvest_resources_opinion_penalty
+	}
+
+	accumulative = yes
+
+	min = -1000
+	decay = {
+		base = 750
+		modifier = {
+			factor = value:negative_opinion_decay_rate
+		}
+	}
+}
+
+triggered_like_attracts_like = {
+	trigger = {
+		OR = {
+			has_country_flag = super_player
+			from = { has_country_flag = super_player }
+			has_valid_civic = civic_selective_kinship
+			from = { has_valid_civic = civic_selective_kinship }
+		}
+		exists = from.species
+		OR ={
+		is_same_species_class = from
+		from = { is_country_type = gray }
+		}
+	}
+
+	opinion = {
+		base = 1000
+	}
+}
