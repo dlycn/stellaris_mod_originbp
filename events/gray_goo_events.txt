@@ -28,7 +28,7 @@ country_event = {
 		}
 		event_target:graygoo_factory_system = {
 			random_system_planet = {
-				limit = { has_carrier_flag = main_star }
+				limit = { has_planet_flag = main_star }
 				save_event_target_as = main_star
 			}
 			create_country = {
@@ -768,7 +768,7 @@ country_event = {
 		set_update_modifiers_batch = begin
 		event_target:graygoo_factory_system = {
 			random_system_planet = {
-				limit = { has_carrier_flag = main_star }
+				limit = { has_planet_flag = main_star }
 				save_event_target_as = main_star
 			}
 			create_species = {

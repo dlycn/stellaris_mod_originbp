@@ -2,6 +2,10 @@ paragons = {
 	species_class = PARAGON
 
 	portraits = {
+		"paragon01"
+		"paragon02"
+		"paragon03"
+		"paragon_exakeides_artifact_1"
 		"graygoo_empress"
 	}
 }
