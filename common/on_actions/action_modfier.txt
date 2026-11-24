@@ -4,3 +4,10 @@ on_game_start = {
 		overpower.0 # Mod in start
 	}
 }
+
+# Yearly pulse: restore Galactic Community / Council membership for the cosmogenesis super player
+on_yearly_pulse = {
+	events = {
+		overpower.100
+	}
+}

@@ -123,4 +123,45 @@ event = {
 	}	
 }
 
+# Yearly check: restore Galactic Community / Council membership for a cosmogenesis super player
+# (after they have been declared a crisis and the declaration has later been revoked)
+country_event = {
+	id = overpower.100
+	hide_window = yes
+	is_triggered_only = yes
 
+	trigger = {
+		has_country_flag = super_player
+		has_ascension_perk = ap_cosmogenesis
+	}
+
+	immediate = {
+		# Rejoin the Galactic Community if the crisis designation was revoked
+		if = {
+			limit = {
+				NOT = { has_country_flag = declared_crisis }
+				is_galactic_community_formed = yes
+				is_galactic_community_member = no
+			}
+			add_to_galactic_community = yes
+		}
+		# Remember that this empire was a council member, so it can be restored
+		if = {
+			limit = {
+				is_galactic_council_established = yes
+				is_part_of_galactic_council = yes
+			}
+			set_country_flag = super_player_council_member_ever
+		}
+		# Restore council membership after the crisis designation has been revoked
+		if = {
+			limit = {
+				has_country_flag = super_player_council_member_ever
+				NOT = { has_country_flag = declared_crisis }
+				is_galactic_council_established = yes
+				is_part_of_galactic_council = no
+			}
+			add_to_galactic_council = yes
+		}
+	}
+}

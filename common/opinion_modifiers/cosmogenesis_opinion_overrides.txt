@@ -1,0 +1,55 @@
+# ============================================================
+# 宇宙创生好感修正覆盖（配合 super_player 强化需求）
+# 覆盖原生 opinion_cosmogenesis_thesis：
+#   - 基础负面评价 -75 -> -50
+#   - 加快好感消散速度（decay 1 -> 10，约 10 倍速）
+# ============================================================
+opinion_cosmogenesis_thesis = {
+	opinion = {
+		base = -50
+	}
+
+	accumulative = yes
+
+	decay = {
+		base = 10
+	}
+}
+
+# ============================================================
+# 覆盖原生 triggered_opinion_cosmogenesis_crisis_empire：
+#   - 基础惩罚 -30 -> -10（2 级总额从 -30 降至 -10）
+#   - 3 级 / 4 级 / 5 级总额保持不变（-70 / -120 / -200）
+#   - 不影响触发条件本身，只调整数值
+# ============================================================
+triggered_opinion_cosmogenesis_crisis_empire = {
+	trigger = {
+		FROM = { has_crisis_level = crisis_cosmogenesis_level_2 }
+		NOT = { has_crisis_level = crisis_cosmogenesis_level_1 }
+		OR = {
+			FROM = { has_crisis_level = crisis_cosmogenesis_level_5 }
+			has_intel_level = {
+				who = from
+				category = government
+				level >= 2
+			}
+		}
+	}
+
+	opinion = {
+		base = -10
+
+		modifier = {
+			add = -30
+			FROM = { has_crisis_level = crisis_cosmogenesis_level_3 }
+		}
+		modifier = {
+			add = -20
+			FROM = { has_crisis_level = crisis_cosmogenesis_level_4 }
+		}
+		modifier = {
+			add = -40
+			FROM = { has_crisis_level = crisis_cosmogenesis_level_5 }
+		}
+	}
+}

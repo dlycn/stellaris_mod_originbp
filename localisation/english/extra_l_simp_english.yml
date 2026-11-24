@@ -9,3 +9,6 @@
  graygoo_supership_cap: "supership"
  gray_follower_army: "gray follower army"
  gray_follower_army_desc: "an ancient and adaptive army of nanobots, the slave of honey gray"
+ overpower_end_cosmo_wars: "End the Cosmogenesis Wars"
+ overpower_end_cosmo_wars_desc: "Forcibly end all wars you started against the fallen empires when you reached Cosmogenesis level 5."
+ overpower_end_cosmo_wars_tooltip: "All your Cosmogenesis level 5 wars against the fallen empires are ended."

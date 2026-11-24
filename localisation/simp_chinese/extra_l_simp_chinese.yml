@@ -9,3 +9,6 @@
  graygoo_supership_cap: "空天母舰"
  gray_follower_army: "纳米虫群"
  gray_follower_army_desc: "古老且适应力惊人的纳米虫群，小灰的眷属"
+ overpower_end_cosmo_wars: "结束宇宙创生战争"
+ overpower_end_cosmo_wars_desc: "强制结束你在宇宙创生达到第5级时对所有堕落帝国发起的战争。"
+ overpower_end_cosmo_wars_tooltip: "你与所有堕落帝国之间的宇宙创生战争将被强行终止。"

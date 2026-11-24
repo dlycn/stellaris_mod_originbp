@@ -1,0 +1,110 @@
+# ============================================================
+# 战争目标覆盖：让宇宙创生的相关天灾战争可以被终止
+# 覆盖 wg_end_threat / wg_cleansing / wg_declared_crisis：
+#   - 移除 forbidden_peace_offers（不再禁止任何和平选项）
+#   - surrender_acceptance 从 -1000 改为 0（AI 可以接受投降）
+# 其余字段与原生完全一致。
+# ============================================================
+
+wg_cleansing = {
+	casus_belli = cb_purification
+	hide = no_cb
+	total_war = yes
+	set_defender_wargoal = wg_end_threat
+
+	galactic_empire_joins_defender = {
+		from = { is_galactic_emperor = yes }
+		imperial_authority >= 100
+	}
+
+	surrender_acceptance = 0
+
+	potential = {
+		from = { NOT = { is_country_type = fallen_empire } }
+		NAND = {
+			is_galactic_emperor = yes
+			from = { is_galactic_community_member = yes }
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = cannot_use_against_emperor
+			OR = {
+				from = { is_galactic_emperor = no }
+				is_galactic_community_member = no
+			}
+		}
+		custom_tooltip = {
+			fail_text = pax_galactica_active
+			NAND = {
+				is_active_resolution = resolution_emperor_pax_galactica
+				is_galactic_community_member = yes
+				from = { is_galactic_community_member = yes }
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+wg_end_threat = {
+	casus_belli = cb_containment
+
+	hide = no_cb
+	total_war = yes
+	set_defender_wargoal = wg_cleansing
+
+	surrender_acceptance = 0
+
+	potential = {
+		OR = {
+			from = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_machine_terminator
+					has_valid_civic = civic_scorched_earth
+				}
+			}
+			AND = {
+				has_country_flag = heir_of_the_khan_khan
+				from = {
+					OR = {
+						is_galactic_emperor = yes
+						is_galactic_custodian = yes
+						has_been_declared_crisis = yes
+					}
+				}
+			}
+		}
+	}
+	possible = {
+		always = yes
+	}
+	ai_weight = {
+		weight = 100
+	}
+}
+
+wg_declared_crisis = {
+	casus_belli = cb_event
+
+	total_war = yes
+
+	surrender_acceptance = 0
+	war_exhaustion = 0.25
+
+	set_defender_wargoal = wg_declared_crisis
+
+	potential = {
+		always = no # event only
+	}
+	possible = {
+		always = yes
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
